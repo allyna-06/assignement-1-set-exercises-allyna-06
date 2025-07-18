@@ -1,0 +1,66 @@
+/* Reset some basic spacing for consistency across browsers */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px;
+}
+
+/* Style the main heading */
+h1 {
+  color: #8b4513;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Subheadings for ingredients and method */
+h2 {
+  color: #d2691e;
+  font-size: 24px;
+  margin-top: 30px;
+  border-bottom: 2px solid #d2691e;
+  padding-bottom: 5px;
+}
+
+/* Style paragraphs */
+p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+/* Ingredient list styling */
+ul {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+ul li {
+  padding: 6px 0;
+  font-size: 17px;
+}
+
+/* Method steps list styling */
+ol {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 25px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+/* Optional: Add some spacing at the bottom of the page */
+body::after {
+  content: '';
+  display: block;
+  height: 50px;
+}
