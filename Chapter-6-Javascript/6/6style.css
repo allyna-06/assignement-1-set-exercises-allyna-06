@@ -1,0 +1,79 @@
+/* Set up the whole page with a clean look and centered layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full screen height */
+  margin: 0;
+}
+
+/* Style the box that wraps the whole calculator */
+.calculator {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Main title */
+.calculator h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Label styling for input fields */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  text-align: left;
+  color: #444;
+}
+
+/* Input fields: nice padding and smooth focus style */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+/* When the input is selected (focused), show a nice blue border */
+input:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+/* Button styling: clean, blue, full width */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Slight color change on hover to show it’s interactive */
+button:hover {
+  background-color: #005f99;
+}
+
+/* Total cost text style */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #222;
+}

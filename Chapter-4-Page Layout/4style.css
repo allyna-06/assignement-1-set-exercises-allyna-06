@@ -1,0 +1,110 @@
+/* Set the basic font and background for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Style for the top banner */
+header {
+  background-color: #17072b;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: Tahoma, sans-serif; /* Matches the brief */
+  font-weight: 700;
+}
+
+/* Navigation bar just below the header */
+nav {
+  background-color: #172d67;
+}
+
+/* Flex container for nav links */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Style the individual navigation links */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Layout: Sidebar and main content side by side */
+.content-layout {
+  display: flex;
+  flex-wrap: wrap; /* Makes it wrap nicely on smaller screens */
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Sidebar section styling */
+.sidebar {
+  background-color: #f5f5f5;
+  padding: 15px;
+  width: 200px;
+  border-right: 2px solid #ccc;
+}
+
+/* Sidebar heading */
+.sidebar h2 {
+  font-family: Tahoma, sans-serif;
+  font-weight: 700;
+}
+
+/* Remove bullet points from the sidebar list */
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Style links in the sidebar */
+.sidebar a {
+  text-decoration: none;
+  color: #17072b;
+}
+
+/* Main content takes up the rest of the space */
+.main-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Consistent heading styles */
+.main-content h2 {
+  font-family: Tahoma, sans-serif;
+  font-weight: 700;
+  color: #17072b;
+}
+
+/* Styling the two lineup images side-by-side */
+.lineup-images {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* Set a fixed size for lineup images */
+.lineup-images img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #17072b;
+}
+
+/* Footer styling at the bottom */
+footer {
+  background-color: #8c15e9;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}

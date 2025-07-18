@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RGB Colour Guessing Game</title>
+
+  <!-- This is where we link our CSS file to style the page -->
+  <link rel="stylesheet" href="bonusstyle.css" />
+</head>
+<body>
+
+  <!-- This container holds the entire game UI -->
+  <div class="game-container">
+    <h1>🎯 Guess the RGB Colour!</h1>
+
+    <!-- This shows the RGB code the player has to match -->
+    <h2 id="rgb-display">rgb(???, ???, ???)</h2>
+
+    <!-- This message updates after every guess -->
+    <p id="message">Pick a colour below:</p>
+
+    <!-- We'll insert the color option buttons here using JavaScript -->
+    <div id="color-options" class="options"></div>
+
+    <!-- This section shows the player's current score and how many lives they have left -->
+    <div class="status">
+      <p>Score: <span id="score">0</span></p>
+      <p>Lives: <span id="lives">5</span></p>
+    </div>
+
+    <!-- This button appears when the game ends so the player can restart -->
+    <button id="restart-btn" class="hidden">Play Again</button>
+  </div>
+
+  <!-- Link to our JavaScript file that runs the game logic -->
+  <script src="bonusindex.js"></script>
+</body>
+</html>

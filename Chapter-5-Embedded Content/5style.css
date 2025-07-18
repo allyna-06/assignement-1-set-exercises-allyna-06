@@ -1,0 +1,24 @@
+/* Basic page reset and background color */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #e8e8e8;
+}
+
+/* This wrapper uses CSS Grid to center the video
+   both vertically and horizontally on the screen */
+.wrapper {
+  display: grid;
+  place-items: center; /* this is the magic line for centering */
+  height: 100vh; /* makes the wrapper fill the whole screen */
+}
+
+/* Style for the video player itself */
+video {
+  width: 640px;          /* standard width for the video */
+  max-width: 90%;        /* keeps video from being too wide on small screens */
+  border-radius: 12px;   /* gives the video rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* subtle shadow for a polished look */
+}

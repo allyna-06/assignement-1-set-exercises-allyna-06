@@ -1,0 +1,96 @@
+/* This resets default spacing and makes everything size more predictably */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sets up the base look of the page: dark background, light text, nice font */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0c0c0c;   /* dark background like a cinema vibe */
+  color: #f2f2f2;              /* easy-to-read light text */
+  line-height: 1.6;            /* adds breathing room between lines */
+  padding: 1rem;               /* some space around the edges */
+}
+
+/* This is the top navigation bar that stays at the top as you scroll */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* keeps it on top of other stuff */
+}
+
+/* Makes the nav links sit side-by-side and removes the dots */
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;  /* lets it wrap on smaller screens */
+}
+
+/* This styles the links inside the nav bar */
+.navbar a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* When you hover over a nav link, it changes color for feedback */
+.navbar a:hover {
+  color: #00bcd4;  /* bright blue on hover */
+}
+
+/* All your main page content is centered and not too wide */
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Makes headers stand out with a nice color and space below */
+h1, h2 {
+  color: #00bcd4;
+  margin-bottom: 0.5rem;
+}
+
+/* Adds spacing to unordered lists */
+ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+/* Adds space between list items */
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Adds space before and after paragraphs */
+p {
+  margin: 1rem 0;
+}
+
+/* Styles the official site link to look like a button */
+.button-link {
+  background-color: #00bcd4;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #0c0c0c;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Makes the button slightly darker when hovered over */
+.button-link:hover {
+  background-color: #019aa6;
+}
+
+/* Simple footer style with small text and muted color */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #888;
+}

@@ -1,0 +1,88 @@
+/* We're setting up the whole page with a nice font, centered layout, and light background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* This is the main game box */
+.game-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* The big title at the top */
+h1 {
+  margin-bottom: 10px;
+}
+
+/* The RGB color value that the player needs to guess */
+#rgb-display {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* This is the box where we place all the color options */
+.options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Each color box the user can click on */
+.option {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid #ccc;
+}
+
+/* A little zoom effect when the player hovers over a color box */
+.option:hover {
+  transform: scale(1.05);
+}
+
+/* Layout for the score and lives below the color boxes */
+.status {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* The "Play Again" button styling */
+button {
+  padding: 10px 20px;
+  background-color: #007acc;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Slightly darker blue when you hover over the button */
+button:hover {
+  background-color: #005b99;
+}
+
+/* This class hides elements (like the restart button until it's needed) */
+.hidden {
+  display: none;
+}

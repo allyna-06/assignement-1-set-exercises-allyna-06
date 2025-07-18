@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Centered Video Example</title>
+  <!-- Linking our CSS file so we can style the page -->
+  <link rel="stylesheet" href="5style.css" />
+</head>
+<body>
+
+  <!-- This is the main area that holds our video -->
+  <main class="wrapper">
+    <!-- The actual video element. 
+         It plays automatically, loops, and starts muted. 
+         The poster shows before the video loads or plays. -->
+    <video 
+      src="Rainbow Screen Change.mp4" 
+      poster="video-poster.jpg" 
+      loop 
+      controls 
+      autoplay 
+      muted
+    >
+      <!-- This shows if the browser doesn’t support video playback -->
+      Your browser doesn't support HTML5 video.
+    </video>
+  </main>
+
+</body>
+</html>
